@@ -154,7 +154,7 @@ def marksheet():
        #========================================================Frame_1===============================================================
        
        Frame_1 = LabelFrame(root, width = 1200, height = 400, font = ('arial',20,'bold'), bg = '#1089FF', bd = 10, \
-                            text = 'Student Details', relief = 'ridge')
+                            text = 'Student Details', relief = 'flat')
        Frame_1.grid(row = 1, column = 0, pady = 20, padx = 20)
 
 
@@ -204,7 +204,7 @@ def marksheet():
 
        #========================================================Frame_2==================================================================       
        Frame_2 = LabelFrame(root, width = 1200, height = 400, font = ('arial',20,'bold'), bg = '#1089FF', bd = 10 \
-                            , text = 'Grades Point Obtained', relief = 'ridge')
+                            , text = 'Grades Point Obtained', relief = 'flat')
        Frame_2.grid(row = 3, column = 0)
 
 

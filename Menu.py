@@ -37,25 +37,25 @@ def menu():
 
 
        #========================================================FRAMES===================================================================
-       Frame_1 = LabelFrame(root, font = ('arial',17,'bold'), width = 1000, height = 100, bg='#1089FF', fg='black')
+       Frame_1 = LabelFrame(root, font = ('arial',17,'bold'), width = 1000, height = 100, bg='#D8E3E7', fg='black', relief='flat')
        Frame_1.grid(row = 1, column = 0, padx = 280)
-       Frame_2 = LabelFrame(root, font = ('arial',17,'bold'), width = 1000, height = 100, bg='#1089FF', fg='black')
+       Frame_2 = LabelFrame(root, font = ('arial',17,'bold'), width = 1000, height = 100, bg='#D8E3E7', fg='black', relief='flat')
        Frame_2.grid(row = 2, column = 0, padx = 130, pady = 7)
-       Frame_3 = LabelFrame(root, font = ('arial',17,'bold'), width = 1000, height = 100,bg='#1089FF', fg='black')
+       Frame_3 = LabelFrame(root, font = ('arial',17,'bold'), width = 1000, height = 100,bg='#D8E3E7', fg='black', relief='flat')
        Frame_3.grid(row = 3, column = 0, pady = 7)
-       Frame_4 = LabelFrame(root, font = ('arial',17,'bold'), width = 1000, height = 100,bg='#1089FF', fg='black')
+       Frame_4 = LabelFrame(root, font = ('arial',17,'bold'), width = 1000, height = 100,bg='#D8E3E7', fg='black', relief='flat')
        Frame_4.grid(row = 4, column = 0, pady = 7)
        
 
 
        #========================================================LABELS===================================================================
-       Label_1 = Label(Frame_1, text = 'STUDENT PROFILE', font = ('arial',25,'bold'), bg='#1089FF', fg='black')
+       Label_1 = Label(Frame_1, text = 'STUDENT PROFILE', font = ('arial',25,'bold'), bg='#D8E3E7', fg='#191970')
        Label_1.grid(row = 0, column = 0, padx = 50, pady = 5)
-       Label_2 = Label(Frame_2, text = 'FEE REPORT', font = ('arial',25,'bold'), bg='#1089FF', fg='black')
+       Label_2 = Label(Frame_2, text = 'FEE REPORT', font = ('arial',25,'bold'), bg='#D8E3E7', fg='#191970')
        Label_2.grid(row = 0, column = 0, padx = 100, pady = 5)
-       Label_3 = Label(Frame_3, text = 'LIBRARY SYSTEM', font = ('arial',25,'bold'), bg='#1089FF', fg='black')
+       Label_3 = Label(Frame_3, text = 'LIBRARY SYSTEM', font = ('arial',25,'bold'), bg='#D8E3E7', fg='#191970')
        Label_3.grid(row = 0, column = 0, padx = 60, pady = 5)
-       Label_4 = Label(Frame_4, text = 'MARKSHEET', font = ('arial',25,'bold'), bg='#1089FF', fg='black')
+       Label_4 = Label(Frame_4, text = 'MARKSHEET', font = ('arial',25,'bold'), bg='#D8E3E7', fg='#191970')
        Label_4.grid(row = 0, column = 0, padx = 101, pady = 5)
        
 

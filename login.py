@@ -29,10 +29,10 @@ class Window_1:
         self.Lbl_Title.grid(row = 0, column = 0, columnspan =3, pady = 40)
         
         self.Login_Frame_1 = LabelFrame(self.Frame, width = 1350, height = 600,  bg = '#D8E3E7', 
-                                        font = ('arial',20,'bold'))
+                                        font = ('arial',20,'bold'),relief = 'flat')
         self.Login_Frame_1.grid(row = 1, column =0)
         self.Login_Frame_2 = LabelFrame(self.Frame, width = 1000, height = 600, bg = '#D8E3E7', 
-                                        font = ('arial',20,'bold'))
+                                        font = ('arial',20,'bold'),relief = 'flat')
         self.Login_Frame_2.grid(row = 2, column = 0)
 
 
@@ -49,13 +49,13 @@ class Window_1:
         
         
         #=============================================================BUTTONS=======================================================================
-        self.btnLogin = Button(self.Login_Frame_2, text = 'Login', width = 10, font = ('airia',15,'bold'),bg='#1089FF', fg='#191970', command = self.Login)
+        self.btnLogin = Button(self.Login_Frame_2, text = 'Login', width = 10, font = ('airia',15,'bold'),bg = '#191970', fg='white', command = self.Login)
         self.btnLogin.grid(row = 3, column = 0, padx = 8, pady = 20)
 
-        self.btnReset = Button(self.Login_Frame_2, text = 'Reset', width = 10, font = ('airia',15,'bold'),bg='#1089FF', fg='#191970', command = self.Reset)
+        self.btnReset = Button(self.Login_Frame_2, text = 'Reset', width = 10, font = ('airia',15,'bold'),bg = '#191970', fg='white', command = self.Reset)
         self.btnReset.grid(row = 3, column = 1, padx = 8, pady = 20)
 
-        self.btnExit = Button(self.Login_Frame_2, text = 'Exit', width = 10, font = ('airia',15,'bold'), bg='#1089FF', fg='#191970', command = self.Exit)
+        self.btnExit = Button(self.Login_Frame_2, text = 'Exit', width = 10, font = ('airia',15,'bold'), bg = '#191970', fg='white', command = self.Exit)
         self.btnExit.grid(row = 3, column = 2, padx = 8, pady = 20)
 
 

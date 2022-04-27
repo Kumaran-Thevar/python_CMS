@@ -132,7 +132,7 @@ class Fee():
         Main_Frame.grid()
 
         Title_Frame = LabelFrame(
-            Main_Frame, width=1350, height=100, bg='#D8E3E7', relief='ridge', bd=15)
+            Main_Frame, width=1350, height=100, bg='#1089FF', relief='ridge', bd=15)
         Title_Frame.pack(side=TOP)
 
         self.lblTitle = Label(Title_Frame, font=('arial', 40, 'bold'), text='FEE REPORT',
@@ -140,23 +140,23 @@ class Fee():
         self.lblTitle.grid(padx=400)
 
         Data_Frame = Frame(Main_Frame, width=1350, height=350,
-                           bg='#D8E3E7', relief='ridge', bd=15)
+                           bg='#1089FF', relief='ridge', bd=15)
         Data_Frame.pack(side=TOP, padx=15)
 
-        Frame_1 = LabelFrame(Data_Frame, width=850, height=350, bg='#1089FF', relief='ridge', bd=8,
+        Frame_1 = LabelFrame(Data_Frame, width=850, height=350, bg='#1089FF', relief='flat', bd=8,
                              text='Informations', font=('arial', 15, 'bold'))
         Frame_1.pack(side=LEFT, padx=10)
 
-        Frame_2 = LabelFrame(Data_Frame, width=495, height=350, bg='#1089FF', relief='ridge', bd=8,
+        Frame_2 = LabelFrame(Data_Frame, width=495, height=350, bg='#1089FF', relief='flat', bd=8,
                              text='Fee Receipt', font=('arial', 15, 'bold'))
         Frame_2.pack(side=RIGHT, padx=10)
 
         List_Frame = Frame(Main_Frame, width=1350, height=150,
-                           bg='#1089FF', relief='ridge', bd=15)
+                           bg='#1089FF', relief='flat', bd=15)
         List_Frame.pack(side=TOP, padx=15)
 
         Button_Frame = Frame(Main_Frame, width=1350, height=80,
-                             bg='#1089FF', relief='ridge', bd=15)
+                             bg='#1089FF', relief='flat', bd=15)
         Button_Frame.pack(side=TOP)
 
         # ===================================================Labels================================================

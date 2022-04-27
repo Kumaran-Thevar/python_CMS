@@ -151,27 +151,27 @@ class Library:
               Main_Frame = Frame(self.root, bg = '#1089FF')
               Main_Frame.grid()
 
-              Title_Frame_1 = Frame(Main_Frame, width = 1350, bg = '#1089FF', relief = RIDGE, bd = 15, padx = 20)
+              Title_Frame_1 = Frame(Main_Frame, width = 1350, bg = '#1089FF', relief = FLAT, bd = 15, padx = 20)
               Title_Frame_1.pack(side = TOP)
 
               self.lblTitle = Label(Title_Frame_1, font = ('arial',40,'bold'), text = '\tLibrary Management System\t', \
                                     bg = '#1089FF', padx = 13)
               self.lblTitle.grid()
 
-              Button_Frame = Frame(Main_Frame, width = 1350, height = 50, relief = RIDGE, bd = 10, bg = '#1089FF')
+              Button_Frame = Frame(Main_Frame, width = 1350, height = 50, relief = FLAT, bd = 10, bg = '#1089FF')
               Button_Frame.pack(side = BOTTOM)
 
-              Detail_Frame = Frame(Main_Frame, width = 1350, height = 100, relief = RIDGE, bd = 10, bg = '#1089FF')
+              Detail_Frame = Frame(Main_Frame, width = 1350, height = 100, relief = FLAT, bd = 10, bg = '#1089FF')
               Detail_Frame.pack(side = BOTTOM)
 
-              Data_Frame = Frame(Main_Frame, width = 1350, height = 400, relief = RIDGE, bd = 15, bg = '#1089FF')
+              Data_Frame = Frame(Main_Frame, width = 1350, height = 400, relief = FLAT, bd = 15, bg = '#1089FF')
               Data_Frame.pack(side = BOTTOM)
 
-              Frame_1 = LabelFrame(Data_Frame, width = 800, height = 400, relief = RIDGE, bd = 10, bg = '#1089FF', \
+              Frame_1 = LabelFrame(Data_Frame, width = 800, height = 400, relief = FLAT, bd = 10, bg = '#1089FF', \
                               text = "Library Membership Info:", padx = 20, font = ('arial',15,'bold'))
               Frame_1.pack(side = LEFT, padx = 3)
 
-              Frame_2 = LabelFrame(Data_Frame, width = 550, height = 400, relief = RIDGE, bd = 10, bg = '#1089FF', \
+              Frame_2 = LabelFrame(Data_Frame, width = 550, height = 400, relief = FLAT, bd = 10, bg = '#1089FF', \
                               text = "Book Details:", padx = 20, font = ('arial',15,'bold'))
               Frame_2.pack(side = RIGHT)
 

@@ -119,11 +119,11 @@ class Std_info():
                      self.Main_Frame.grid(row = 0, column = 0, padx = 10, pady = 20)
 
                      self.Frame_1 = LabelFrame(self.Main_Frame, width = 600, height = 400, font = ('arial',15,'bold'), \
-                                               relief = 'flat', bd = 10, bg = '#D8E3E7', text = 'STUDENT INFORMATION ')
+                                               relief = 'flat', bd = 10, bg = '#D8E3E7', text = 'STUDENT INFORMATION ', fg='#191970')
                      self.Frame_1.grid(row = 1, column = 0, padx = 10)
 
                      self.Frame_2 = LabelFrame(self.Main_Frame, width = 750, height = 400, font = ('arial',15,'bold'), \
-                                               relief = 'flat', bd = 10, bg = '#D8E3E7', text = 'STUDENT DATABASE')
+                                               relief = 'flat', bd = 10, bg = '#D8E3E7', text = 'STUDENT DATABASE', fg='#191970')
                      self.Frame_2.grid(row = 1, column = 1, padx = 5)                  
                      
                      self.Frame_3 = LabelFrame(self.master, width = 1200, height = 100, font = ('arial',10,'bold'), \
@@ -133,21 +133,21 @@ class Std_info():
 
                      
                      #========================================================Labels of Frame_1========================================================
-                     self.Label_name = Label(self.Frame_1, text = 'Name', font = ('arial',20,'bold'),  bg = '#D8E3E7')
+                     self.Label_name = Label(self.Frame_1, text = 'Name', font = ('arial',20,'bold'),  bg = '#D8E3E7', fg='#191970')
                      self.Label_name.grid(row = 0, column = 0, sticky = W, padx = 20, pady = 10)
-                     self.Label_fname = Label(self.Frame_1, text = 'Father Name', font = ('arial',20,'bold'),  bg = '#D8E3E7')
+                     self.Label_fname = Label(self.Frame_1, text = 'Father Name', font = ('arial',20,'bold'),  bg = '#D8E3E7', fg='#191970')
                      self.Label_fname.grid(row = 1, column = 0, sticky = W, padx = 20)
-                     self.Label_mname = Label(self.Frame_1, text = 'Mother Name', font = ('arial',20,'bold'),  bg = '#D8E3E7')
+                     self.Label_mname = Label(self.Frame_1, text = 'Mother Name', font = ('arial',20,'bold'),  bg = '#D8E3E7', fg='#191970')
                      self.Label_mname.grid(row = 2, column = 0, sticky = W, padx = 20)
-                     self.Label_address = Label(self.Frame_1, text = 'Address', font = ('arial',20,'bold'),  bg = '#D8E3E7')
+                     self.Label_address = Label(self.Frame_1, text = 'Address', font = ('arial',20,'bold'),  bg = '#D8E3E7', fg='#191970')
                      self.Label_address.grid(row = 3, column = 0, sticky = W, padx = 20)
-                     self.Label_mobno = Label(self.Frame_1, text = 'Mobile Number', font = ('arial',20,'bold'),  bg = '#D8E3E7')
+                     self.Label_mobno = Label(self.Frame_1, text = 'Mobile Number', font = ('arial',20,'bold'),  bg = '#D8E3E7', fg='#191970')
                      self.Label_mobno.grid(row = 4, column = 0, sticky = W, padx = 20)
-                     self.Label_emailID = Label(self.Frame_1, text = 'Email ID', font = ('arial',20,'bold'),  bg = '#D8E3E7')
+                     self.Label_emailID = Label(self.Frame_1, text = 'Email ID', font = ('arial',20,'bold'),  bg = '#D8E3E7', fg='#191970')
                      self.Label_emailID.grid(row = 5, column = 0, sticky = W, padx = 20)
-                     self.Label_dob = Label(self.Frame_1, text = 'Date of Birth', font = ('arial',20,'bold'),  bg = '#D8E3E7')
+                     self.Label_dob = Label(self.Frame_1, text = 'Date of Birth', font = ('arial',20,'bold'),  bg = '#D8E3E7', fg='#191970')
                      self.Label_dob.grid(row = 6, column = 0, sticky = W, padx = 20)
-                     self.Label_gender = Label(self.Frame_1, text = 'Gender', font = ('arial',20,'bold'),  bg = '#D8E3E7')
+                     self.Label_gender = Label(self.Frame_1, text = 'Gender', font = ('arial',20,'bold'),  bg = '#D8E3E7', fg='#191970')
                      self.Label_gender.grid(row = 7, column = 0, sticky = W, padx = 20, pady = 10)
 
 

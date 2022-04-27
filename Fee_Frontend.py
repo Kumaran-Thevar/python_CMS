@@ -161,43 +161,43 @@ class Fee():
 
         # ===================================================Labels================================================
         self.recpt_label = Label(Frame_1, text='Receipt No. : ', font=(
-            'arial', 14, 'bold'), bg='Navajo white')
+            'arial', 14, 'bold'), bg='#1089FF')
         self.recpt_label.grid(row=0, column=0, padx=15, sticky=W)
 
         self.name_label = Label(Frame_1, text='Student Name : ', font=(
-            'arial', 14, 'bold'), bg='Navajo white')
+            'arial', 14, 'bold'), bg='#1089FF')
         self.name_label.grid(row=1, column=0, padx=15, sticky=W)
 
         self.admsn_label = Label(Frame_1, text='Admission No. : ', font=(
-            'arial', 14, 'bold'), bg='Navajo white')
+            'arial', 14, 'bold'), bg='#1089FF')
         self.admsn_label.grid(row=2, column=0, padx=15, sticky=W)
 
         self.Date_label = Label(Frame_1, text='Date : ', font=(
-            'arial', 14, 'bold'), bg='Navajo white')
+            'arial', 14, 'bold'), bg='#1089FF')
         self.Date_label.grid(row=3, column=0, padx=15, sticky=W)
 
         self.branch_label = Label(Frame_1, text='Branch : ', font=(
-            'arial', 14, 'bold'), bg='Navajo white')
+            'arial', 14, 'bold'), bg='#1089FF')
         self.branch_label.grid(row=4, column=0, padx=15, sticky=W)
 
         self.sem_label = Label(Frame_1, text='Semester : ', font=(
-            'arial', 14, 'bold'), bg='Navajo white')
+            'arial', 14, 'bold'), bg='#1089FF')
         self.sem_label.grid(row=5, column=0, padx=15, sticky=W)
 
         self.total_label = Label(Frame_1, text='TOTAL AMOUNT : ', font=(
-            'arial', 14, 'bold'), bg='Navajo white')
+            'arial', 14, 'bold'), bg='#1089FF')
         self.total_label.grid(row=2, column=2, padx=5, sticky=W)
 
         self.paid_label = Label(Frame_1, text='PAID AMOUNT : ', font=(
-            'arial', 14, 'bold'), bg='Navajo white')
+            'arial', 14, 'bold'), bg='#1089FF')
         self.paid_label.grid(row=3, column=2, padx=5, sticky=W)
 
         self.due_label = Label(Frame_1, text='BALANCE : ', font=(
-            'arial', 14, 'bold'), bg='Navajo white')
+            'arial', 14, 'bold'), bg='#1089FF')
         self.due_label.grid(row=4, column=2, padx=5, sticky=W)
 
         # ==================================================Entries=================================================
-        self.var_1 = DoubleVar(Frame_1, value='36265')
+        self.var_1 = DoubleVar(Frame_1, value='149760')
         d1 = datetime.date.today()
         self.date.set(d1)
 
@@ -255,35 +255,35 @@ class Fee():
 
         # ==================================================Buttons=================================================
         btnSave = Button(Button_Frame, text='SAVE', font=(
-            'arial', 14, 'bold'), width=10, command=Insert)
+            'arial', 14, 'bold'), width=10,bg = '#191970', fg='white', command=Insert)
         btnSave.grid(row=0, column=0, padx=5, pady=5)
 
         btnDisplay = Button(Button_Frame, text='DISPLAY', font=(
-            'arial', 14, 'bold'), width=10, command=View)
+            'arial', 14, 'bold'), width=10,bg = '#191970', fg='white', command=View)
         btnDisplay.grid(row=0, column=1, padx=5, pady=5)
 
         btnReset = Button(Button_Frame, text='RESET', font=(
-            'arial', 14, 'bold'), width=10, command=Reset)
+            'arial', 14, 'bold'), width=10,bg = '#191970', fg='white', command=Reset)
         btnReset.grid(row=0, column=2, padx=5, pady=5)
 
         btnReset = Button(Button_Frame, text='UPDATE', font=(
-            'arial', 14, 'bold'), width=10, command=Update)
+            'arial', 14, 'bold'), width=10,bg = '#191970', fg='white', command=Update)
         btnReset.grid(row=0, column=3, padx=5, pady=5)
 
         btnSearch = Button(Button_Frame, text='SEARCH', font=(
-            'arial', 14, 'bold'), width=10, command=Search)
+            'arial', 14, 'bold'), width=10,bg = '#191970', fg='white', command=Search)
         btnSearch.grid(row=0, column=4, padx=5, pady=5)
 
         btnDelete = Button(Button_Frame, text='DELETE', font=(
-            'arial', 14, 'bold'), width=10, command=Delete)
+            'arial', 14, 'bold'), width=10,bg = '#191970', fg='white', command=Delete)
         btnDelete.grid(row=0, column=5, padx=5, pady=5)
 
         btnReceipt = Button(Button_Frame, text='RECEIPT', font=(
-            'arial', 14, 'bold'), width=10, command=Receipt)
+            'arial', 14, 'bold'), width=10,bg = '#191970', fg='white', command=Receipt)
         btnReceipt.grid(row=0, column=6, padx=5, pady=5)
 
         btnExit = Button(Button_Frame, text='EXIT', font=(
-            'arial', 14, 'bold'), width=10, command=Exit)
+            'arial', 14, 'bold'), width=10,bg = '#191970', fg='white', command=Exit)
         btnExit.grid(row=0, column=7, padx=5, pady=5)
 
 

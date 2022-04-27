@@ -9,7 +9,7 @@ class Std_info():
               self.master = master
               self.master.title('Student Information')
               self.master.geometry('1350x750')
-              self.master.config(bg = '#D8E3E7')
+              self.master.config(bg = '#1089FF')
               
               def information():
               #========================================================Variables=====================================================================

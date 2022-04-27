@@ -128,19 +128,19 @@ class Fee():
                 return
 
         # ==================================================Frames===================================================
-        Main_Frame = Frame(self.master, bg='#1089FF')
+        Main_Frame = Frame(self.master, bg='#D8E3E7')
         Main_Frame.grid()
 
         Title_Frame = LabelFrame(
-            Main_Frame, width=1350, height=100, bg='#1089FF', relief='ridge', bd=15)
+            Main_Frame, width=1350, height=100, bg='#D8E3E7', relief='ridge', bd=15)
         Title_Frame.pack(side=TOP)
 
         self.lblTitle = Label(Title_Frame, font=('arial', 40, 'bold'), text='FEE REPORT',
-                              bg='#1089FF', padx=13)
+                              bg='#D8E3E7', padx=13)
         self.lblTitle.grid(padx=400)
 
         Data_Frame = Frame(Main_Frame, width=1350, height=350,
-                           bg='#1089FF', relief='ridge', bd=15)
+                           bg='#D8E3E7', relief='ridge', bd=15)
         Data_Frame.pack(side=TOP, padx=15)
 
         Frame_1 = LabelFrame(Data_Frame, width=850, height=350, bg='#1089FF', relief='ridge', bd=8,

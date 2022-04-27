@@ -128,72 +128,72 @@ class Fee():
                 return
 
         # ==================================================Frames===================================================
-        Main_Frame = Frame(self.master, bg='#1089FF')
+        Main_Frame = Frame(self.master, bg='#D8E3E7')
         Main_Frame.grid()
 
         Title_Frame = LabelFrame(
-            Main_Frame, width=1350, height=100, bg='#1089FF', relief='flat', bd=15)
+            Main_Frame, width=1350, height=100, bg='#D8E3E7', relief='ridge', bd=15)
         Title_Frame.pack(side=TOP)
 
         self.lblTitle = Label(Title_Frame, font=('arial', 40, 'bold'), text='FEE REPORT',
-                              bg='#1089FF', padx=13)
+                              bg='#D8E3E7', padx=13)
         self.lblTitle.grid(padx=400)
 
         Data_Frame = Frame(Main_Frame, width=1350, height=350,
-                           bg='#1089FF', relief='flat', bd=15)
+                           bg='#D8E3E7', relief='ridge', bd=15)
         Data_Frame.pack(side=TOP, padx=15)
 
-        Frame_1 = LabelFrame(Data_Frame, width=850, height=350, bg='#1089FF', relief='flat', bd=8,
+        Frame_1 = LabelFrame(Data_Frame, width=850, height=350, bg='#D8E3E7', relief='flat', bd=8,
                              text='Informations', font=('arial', 15, 'bold'))
         Frame_1.pack(side=LEFT, padx=10)
 
-        Frame_2 = LabelFrame(Data_Frame, width=495, height=350, bg='#1089FF', relief='flat', bd=8,
+        Frame_2 = LabelFrame(Data_Frame, width=495, height=350, bg='#D8E3E7', relief='flat', bd=8,
                              text='Fee Receipt', font=('arial', 15, 'bold'))
         Frame_2.pack(side=RIGHT, padx=10)
 
         List_Frame = Frame(Main_Frame, width=1350, height=150,
-                           bg='#1089FF', relief='flat', bd=15)
+                           bg='#D8E3E7', relief='flat', bd=15)
         List_Frame.pack(side=TOP, padx=15)
 
         Button_Frame = Frame(Main_Frame, width=1350, height=80,
-                             bg='#1089FF', relief='flat', bd=15)
+                             bg='#D8E3E7', relief='flat', bd=15)
         Button_Frame.pack(side=TOP)
 
         # ===================================================Labels================================================
         self.recpt_label = Label(Frame_1, text='Receipt No. : ', font=(
-            'arial', 14, 'bold'), bg='#1089FF')
+            'arial', 14, 'bold'), bg='#D8E3E7')
         self.recpt_label.grid(row=0, column=0, padx=15, sticky=W)
 
         self.name_label = Label(Frame_1, text='Student Name : ', font=(
-            'arial', 14, 'bold'), bg='#1089FF')
+            'arial', 14, 'bold'), bg='#D8E3E7')
         self.name_label.grid(row=1, column=0, padx=15, sticky=W)
 
         self.admsn_label = Label(Frame_1, text='Admission No. : ', font=(
-            'arial', 14, 'bold'), bg='#1089FF')
+            'arial', 14, 'bold'), bg='#D8E3E7')
         self.admsn_label.grid(row=2, column=0, padx=15, sticky=W)
 
         self.Date_label = Label(Frame_1, text='Date : ', font=(
-            'arial', 14, 'bold'), bg='#1089FF')
+            'arial', 14, 'bold'), bg='#D8E3E7')
         self.Date_label.grid(row=3, column=0, padx=15, sticky=W)
 
         self.branch_label = Label(Frame_1, text='Branch : ', font=(
-            'arial', 14, 'bold'), bg='#1089FF')
+            'arial', 14, 'bold'), bg='#D8E3E7')
         self.branch_label.grid(row=4, column=0, padx=15, sticky=W)
 
         self.sem_label = Label(Frame_1, text='Semester : ', font=(
-            'arial', 14, 'bold'), bg='#1089FF')
+            'arial', 14, 'bold'), bg='#D8E3E7')
         self.sem_label.grid(row=5, column=0, padx=15, sticky=W)
 
         self.total_label = Label(Frame_1, text='TOTAL AMOUNT : ', font=(
-            'arial', 14, 'bold'), bg='#1089FF')
+            'arial', 14, 'bold'), bg='#D8E3E7')
         self.total_label.grid(row=2, column=2, padx=5, sticky=W)
 
         self.paid_label = Label(Frame_1, text='PAID AMOUNT : ', font=(
-            'arial', 14, 'bold'), bg='#1089FF')
+            'arial', 14, 'bold'), bg='#D8E3E7')
         self.paid_label.grid(row=3, column=2, padx=5, sticky=W)
 
         self.due_label = Label(Frame_1, text='BALANCE : ', font=(
-            'arial', 14, 'bold'), bg='#1089FF')
+            'arial', 14, 'bold'), bg='#D8E3E7')
         self.due_label.grid(row=4, column=2, padx=5, sticky=W)
 
         # ==================================================Entries=================================================

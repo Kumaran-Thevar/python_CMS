@@ -512,19 +512,19 @@ class Library:
 
 
        #=============================================Buttons=========================================================
-              Button_1 = Button(Button_Frame, text = 'SAVE', font = ('arial',15,'bold'), width = 10, command = Insert)
+              Button_1 = Button(Button_Frame, text = 'SAVE', font = ('arial',15,'bold'), width = 10, command = Insert,bg = '#191970', fg='white')
               Button_1.grid(row = 0, column = 0, padx = 8, pady = 5)
-              Button_2 = Button(Button_Frame, text = 'DISPLAY', font = ('arial',15,'bold'), width = 10, command = Display)
+              Button_2 = Button(Button_Frame, text = 'DISPLAY', font = ('arial',15,'bold'), width = 10, command = Display,bg = '#191970', fg='white')
               Button_2.grid(row = 0, column = 1, padx = 8)
-              Button_3 = Button(Button_Frame, text = 'RESET', font = ('arial',15,'bold'), width = 10, command = Reset)
+              Button_3 = Button(Button_Frame, text = 'RESET', font = ('arial',15,'bold'), width = 10, command = Reset,bg = '#191970', fg='white')
               Button_3.grid(row = 0, column = 2, padx = 8)
-              Button_4 = Button(Button_Frame, text = 'UPDATE', font = ('arial',15,'bold'), width = 10, command = Update)
+              Button_4 = Button(Button_Frame, text = 'UPDATE', font = ('arial',15,'bold'), width = 10, command = Update,bg = '#191970', fg='white')
               Button_4.grid(row = 0, column = 3, padx = 8)
-              Button_5 = Button(Button_Frame, text = 'SEARCH', font = ('arial',15,'bold'), width = 10, command = Search)
+              Button_5 = Button(Button_Frame, text = 'SEARCH', font = ('arial',15,'bold'), width = 10, command = Search,bg = '#191970', fg='white')
               Button_5.grid(row = 0, column = 4, padx = 8)
-              Button_6 = Button(Button_Frame, text = 'DELETE', font = ('arial',15,'bold'), width = 10, command = Delete)
+              Button_6 = Button(Button_Frame, text = 'DELETE', font = ('arial',15,'bold'), width = 10, command = Delete,bg = '#191970', fg='white')
               Button_6.grid(row = 0, column = 5, padx = 8)
-              Button_7 = Button(Button_Frame, text = 'EXIT', font = ('arial',15,'bold'), width = 10, command = Exit)
+              Button_7 = Button(Button_Frame, text = 'EXIT', font = ('arial',15,'bold'), width = 10, command = Exit,bg = '#191970', fg='white')
               Button_7.grid(row = 0, column = 6, padx = 8)
 
               

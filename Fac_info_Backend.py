@@ -4,13 +4,12 @@ def connect():
        conn = sqlite3.connect("faculty.db")
        cur = conn.cursor()
 
-       cur.execute("CREATE TABLE IF NOT EXISTS faculty (id INTEGER PRIMARY KEY, name VARCHAR, email VARCHAR, \
-                     address VARCHAR, mobno VARCHAR(50),edu VARCHAR, dob VARCHAR, gender VARCHAR)")
+       cur.execute("CREATE TABLE IF NOT EXISTS faculty (id INTEGER PRIMARY KEY, name VARCHAR, email VARCHAR, address VARCHAR, mobno VARCHAR(50),edu VARCHAR, dob VARCHAR, gender VARCHAR)")
 
        conn.commit()
        conn.close()
 
-def insert(id = " ", name = " ",email = " ", address = " ", mobno = " ", edu = " ", dob = " ", gender = " "):
+def insert(name = " ",email = " ", address = " ", mobno = " ", edu = " ", dob = " ", gender = " "):
        conn = sqlite3.connect("faculty.db")
        cur = conn.cursor()
 
@@ -38,12 +37,11 @@ def delete(id):
        conn.commit()
        conn.close()
 
-def update(id= " ", name = " ", email = " ", address = " ", mobno = " ", edu = " ", dob = " ", gender = " "):
+def update(id,name = " ", email = " ", address = " ", mobno = " ", edu = " ", dob = " ", gender = " "):
        conn = sqlite3.connect("faculty.db")
        cur = conn.cursor()
 
-       cur.execute("UPDATE faculty SET name = ? OR email = ? OR address = ? OR mobno = ? OR edu = ? OR dob = ? OR gender = ?", \
-                   (name, email, address, mobno, edu, dob, gender))
+       cur.execute("UPDATE faculty SET name = ? OR email = ? OR address = ? OR mobno = ? OR edu = ? OR dob = ? OR gender = ?", (name, email, address, mobno, edu, dob, gender))
 
        conn.commit()
        conn.close()
@@ -52,8 +50,7 @@ def search(name = " ", email = " ", address = " ", mobno = " ", edu = " ", dob =
        conn = sqlite3.connect("faculty.db")
        cur = conn.cursor()
 
-       cur.execute("SELECT * FROM faculty WHERE name = ? OR email = ? OR address = ? OR mobno = ? OR edu = ? OR dob = ? \
-                     OR gender = ?", (name, email, address , mobno, edu, dob, gender))
+       cur.execute("SELECT * FROM faculty WHERE name = ? OR email = ? OR address = ? OR mobno = ? OR edu = ? OR dob = ? OR gender = ?", (name, email, address , mobno, edu, dob, gender))
        rows = cur.fetchall()
        return rows
        

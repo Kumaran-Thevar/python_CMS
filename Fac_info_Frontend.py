@@ -24,7 +24,7 @@ class Std_info():
 
 
                #==========================================================Functions====================================================================
-                     def StudentRec(event):
+                     def FacultyRec(event):
                             try: 
                                    global selected_tuple
                                    
@@ -57,7 +57,7 @@ class Std_info():
 
                      def Add():
                             if(len(self.name.get()) != 0):
-                               Fac_info_Backend.insert(self.name.get(), self.email.get(), self.address.get(), self.mobno.get(), self.edu.get(), self.dob.get(), self.gender.get())
+                               Fac_info_Backend.insert(self.name.get(), self.email.get(), self.address.get(), self.mobno.get(), self.edu.get(), self.dob.get(),  self.gender.get())
                                self.listbox.delete(0, END)
                                self.listbox.insert(END, (self.name.get(), self.email.get(), self.address.get(), self.mobno.get(), self.edu.get(), self.dob.get(), self.gender.get()))
 
@@ -198,7 +198,7 @@ class Std_info():
                      self.scrollbar.grid(row = 0, column = 1, sticky = 'ns')
 
                      self.listbox = Listbox(self.Frame_2, width = 75, height = 20 , font = ('arial',12,'bold'))
-                     self.listbox.bind('<<ListboxSelect>>', StudentRec)
+                     self.listbox.bind('<<ListboxSelect>>', FacultyRec)
                      self.listbox.grid(row = 0, column = 0)
                      self.scrollbar.config(command = self.listbox.yview)
                             

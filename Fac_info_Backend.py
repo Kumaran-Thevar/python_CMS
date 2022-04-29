@@ -4,57 +4,57 @@ def connect():
        conn = sqlite3.connect("faculty.db")
        cur = conn.cursor()
 
-       cur.execute("CREATE TABLE IF NOT EXISTS student (id INTEGER PRIMARY KEY, name text, fname text, mname text, \
-                     address text, mobno integer,email text, dob integer, gender text)")
+       cur.execute("CREATE TABLE IF NOT EXISTS student (id INTEGER PRIMARY KEY, name VARCHAR, email VARCHAR, \
+                     address VARCHAR, mobno VARCHAR,edu VARCHAR, dob VARCHAR, gender VARCHAR)")
 
        conn.commit()
        conn.close()
 
-def insert(name = " ", fname = " ", mname = " ", address = " ", mobno = " ", email = " ", dob = " ", gender = " "):
+def insert(id = " ", name = " ",email = " ", address = " ", mobno = " ", edu = " ", dob = " ", gender = " "):
        conn = sqlite3.connect("faculty.db")
        cur = conn.cursor()
 
-       cur.execute("INSERT INTO student VALUES (NULL,?,?,?,?,?,?,?,?)", (name, fname, mname, address , mobno, email, dob, gender))
+       cur.execute("INSERT INTO student VALUES (NULL,?,?,?,?,?,?,?,?)", (id, name, email, address , mobno, edu, dob, gender))
 
        conn.commit()
        conn.close()
                                                                         
 
 def view():
-       conn = sqlite3.connect("student.db")
+       conn = sqlite3.connect("faculty.db")
        cur = conn.cursor()
 
-       cur.execute("SELECT * FROM student")
+       cur.execute("SELECT * FROM faculty")
        rows = cur.fetchall()
        return rows
 
        conn.close()
 
 def delete(id):
-       conn = sqlite3.connect("student.db")
+       conn = sqlite3.connect("faculty.db")
        cur = conn.cursor()
 
-       cur.execute("DELETE FROM student WHERE id = ?", (id,))
+       cur.execute("DELETE FROM faculty WHERE id = ?", (id,))
 
        conn.commit()
        conn.close()
 
-def update(id,name = " ", fname = " ", mname = " ", address = " ", mobno = " ", email = " ", dob = " ", gender = " "):
-       conn = sqlite3.connect("student.db")
+def update(id= " ",name = " ", email = " ", address = " ", mobno = " ", edu = " ", dob = " ", gender = " "):
+       conn = sqlite3.connect("faculty.db")
        cur = conn.cursor()
 
-       cur.execute("UPDATE student SET name = ? OR fname = ? OR mname = ? OR address = ? OR mobno = ? OR email = ? OR dob = ? OR gender = ?", \
-                   (name, fname, mname, address , mobno, email, dob, gender))
+       cur.execute("UPDATE faculty SET name = ? OR email = ? OR address = ? OR mobno = ? OR edu = ? OR dob = ? OR gender = ?", \
+                   (name, email, address, mobno, edu, dob, gender))
 
        conn.commit()
        conn.close()
 
-def search(name = " ", fname = " ", mname = " ", address = " ", mobno = " ", email = " ", dob = " ", gender = " "):
-       conn = sqlite3.connect("student.db")
+def search(name = " ", email = " ", address = " ", mobno = " ", edu = " ", dob = " ", gender = " "):
+       conn = sqlite3.connect("faculty.db")
        cur = conn.cursor()
 
-       cur.execute("SELECT * FROM student WHERE name = ? OR fname = ? OR mname = ? OR address = ? OR mobno = ? OR email = ? OR dob = ? \
-                     OR gender = ?", (name, fname, mname, address , mobno, email, dob, gender))
+       cur.execute("SELECT * FROM faculty WHERE name = ? OR email = ? OR address = ? OR mobno = ? OR edu = ? OR dob = ? \
+                     OR gender = ?", (name, email, address , mobno, edu, dob, gender))
        rows = cur.fetchall()
        return rows
        

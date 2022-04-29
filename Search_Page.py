@@ -16,7 +16,7 @@ class Window_1():
               frame = LabelFrame(self.master, width = 1000, height = 100, font = ('arial',30,'bold'), relief = 'flat', bd = 15, bg = '#D8E3E7')
               frame.grid(row = 1, column = 0, padx = 200, pady = 200)
 
-              label = Label(frame, text = 'Enter Roll Number', font = ('arial',25,'bold'), bg = '#D8E3E7' )
+              label = Label(frame, text = 'Enter Roll Number', font = ('arial',25,'bold'), bg = '#D8E3E7',fg='#191970' )
               label.grid(row = 0, column = 0, padx = 100, pady = 10)
 
               entry = Entry(frame, font = ('arial',25,'bold'), textvariable = self.roll)
@@ -37,9 +37,9 @@ class Window_1():
                      os.system('notepad'+filename)
                            
 
-              btnSearch = Button(frame, text = 'SEARCH', width = 15, font = ('arial',15,'bold'), command=Search)
+              btnSearch = Button(frame, text = 'SEARCH', width = 15, font = ('arial',15,'bold'),bg = '#191970', fg='white', command=Search)
               btnSearch.grid(row = 1, column = 0, padx = 50)
-              btnNew = Button(frame, text = 'CREATE NEW', width = 15, font = ('arial',15,'bold'), command=new)
+              btnNew = Button(frame, text = 'CREATE NEW', width = 15, font = ('arial',15,'bold'),bg = '#191970', fg='white', command=new)
               btnNew.grid(row = 1, column = 1, padx = 50, pady = 20 )
 
 

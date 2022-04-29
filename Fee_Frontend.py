@@ -180,7 +180,7 @@ class Fee():
             'arial', 14, 'bold'), bg='#D8E3E7',fg='#191970')
         self.branch_label.grid(row=4, column=0, padx=15, sticky=W)
 
-        self.sem_label = Label(Frame_1, text='Semester : ', font=(
+        self.sem_label = Label(Frame_1, text='Year : ', font=(
             'arial', 14, 'bold'), bg='#D8E3E7',fg='#191970')
         self.sem_label.grid(row=5, column=0, padx=15, sticky=W)
 
@@ -221,8 +221,7 @@ class Fee():
                                          font=('arial', 14), width=19, textvariable=self.branch)
         self.branch_entry.grid(row=4, column=1, padx=15, pady=5)
 
-        self.sem_entry = ttk.Combobox(Frame_1, values=(' ', 'FIRST', 'SECOND', 'THIRD', 'FOURTH', 'FIFTH', 'SIXTH',
-                                                       'SEVENTH', 'EIGHTH'), font=('arial', 14), width=19,
+        self.sem_entry = ttk.Combobox(Frame_1, values=(' ', 'FIRST', 'SECOND', 'THIRD', 'FOURTH'), font=('arial', 14), width=19,
                                       textvariable=self.sem)
         self.sem_entry.grid(row=5, column=1, padx=15, pady=5)
 

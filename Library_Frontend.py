@@ -155,7 +155,7 @@ class Library:
               Title_Frame_1.pack(side = TOP)
 
               self.lblTitle = Label(Title_Frame_1, font = ('arial',40,'bold'), text = '\tLibrary Management System\t', \
-                                    bg = '#D8E3E7', padx = 13)
+                                    bg = '#D8E3E7', padx = 13,fg='#191970')
               self.lblTitle.grid()
 
               Button_Frame = Frame(Main_Frame, width = 1350, height = 50, relief = FLAT, bd = 10, bg = '#D8E3E7')
@@ -168,53 +168,53 @@ class Library:
               Data_Frame.pack(side = BOTTOM)
 
               Frame_1 = LabelFrame(Data_Frame, width = 800, height = 400, relief = FLAT, bd = 10, bg = '#D8E3E7', \
-                              text = "Library Membership Info:", padx = 20, font = ('arial',15,'bold'))
+                              text = "Library Membership Info:", padx = 20, font = ('arial',15,'bold'),fg='#191970')
               Frame_1.pack(side = LEFT, padx = 3)
 
               Frame_2 = LabelFrame(Data_Frame, width = 550, height = 400, relief = FLAT, bd = 10, bg = '#D8E3E7', \
-                              text = "Book Details:", padx = 20, font = ('arial',15,'bold'))
+                              text = "Book Details:", padx = 20, font = ('arial',15,'bold'),fg='#191970')
               Frame_2.pack(side = RIGHT)
 
 
        #================================================Labels========================================================
               self.Label_1 = Label(Frame_1, text = 'Member type', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = '#D8E3E7' )
+                                   bg = '#D8E3E7' ,fg='#191970')
               self.Label_1.grid(row = 0, column = 0, sticky = W)
               self.Label_2 = Label(Frame_1, text = 'Reference No.', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = '#D8E3E7' )
+                                   bg = '#D8E3E7' ,fg='#191970')
               self.Label_2.grid(row = 1, column = 0, sticky = W)
               self.Label_3 = Label(Frame_1, text = 'First Name', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = '#D8E3E7' )
+                                   bg = '#D8E3E7',fg='#191970' )
               self.Label_3.grid(row = 2, column = 0, sticky = W)
               self.Label_4 = Label(Frame_1, text = 'Surname', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = '#D8E3E7' )
+                                   bg = '#D8E3E7',fg='#191970' )
               self.Label_4.grid(row = 3, column = 0, sticky = W)
               self.Label_5 = Label(Frame_1, text = 'Address', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = '#D8E3E7' )
+                                   bg = '#D8E3E7',fg='#191970' )
               self.Label_5.grid(row = 4, column = 0, sticky = W)
               self.Label_6 = Label(Frame_1, text = 'Post Code', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = '#D8E3E7' )
+                                   bg = '#D8E3E7' ,fg='#191970')
               self.Label_6.grid(row = 5, column = 0, sticky = W)
               self.Label_7 = Label(Frame_1, text = 'Mobile No.', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = '#D8E3E7' )
+                                   bg = '#D8E3E7',fg='#191970' )
               self.Label_7.grid(row = 6, column = 0, sticky = W)
               self.Label_8 = Label(Frame_1, text = 'Book ID', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = '#D8E3E7' )
+                                   bg = '#D8E3E7',fg='#191970' )
               self.Label_8.grid(row = 0, column = 2, sticky = W)
               self.Label_9 = Label(Frame_1, text = 'Book Title', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = '#D8E3E7' )
+                                   bg = '#D8E3E7',fg='#191970' )
               self.Label_9.grid(row = 1, column = 2, sticky = W)
               self.Label_10 = Label(Frame_1, text = 'Author', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = '#D8E3E7' )
+                                   bg = '#D8E3E7',fg='#191970' )
               self.Label_10.grid(row = 2, column = 2, sticky = W)
               self.Label_11 = Label(Frame_1, text = 'Date Borrowed', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = '#D8E3E7' )
+                                   bg = '#D8E3E7' ,fg='#191970')
               self.Label_11.grid(row = 3, column = 2, sticky = W)
               self.Label_13 = Label(Frame_1, text = 'Date Due', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = '#D8E3E7' )
+                                   bg = '#D8E3E7' ,fg='#191970')
               self.Label_13.grid(row = 4, column = 2, sticky = W)
               self.Label_13 = Label(Frame_1, text = 'Days in Loan', font = ('arial',13,'bold'), pady = 2, \
-                                   bg = '#D8E3E7' )
+                                   bg = '#D8E3E7',fg='#191970' )
               self.Label_13.grid(row = 5, column = 2, sticky = W)
               
 
@@ -493,7 +493,7 @@ class Library:
               sb_1 = Scrollbar(Frame_2)
               sb_1.grid(row =0, column = 1, sticky = 'ns')
 
-              self.Listbox_1 = Listbox(Frame_2, font = ('arial',13,'bold'), width = 20, height = 10)
+              self.Listbox_1 = Listbox(Frame_2, font = ('arial',13,'bold'), width = 20, height = 10,fg='#191970')
               self.Listbox_1.bind('<<ListboxSelect>>', SelectedBook)
               self.Listbox_1.grid(row = 0, column = 0)
               sb_1.config(command = self.Listbox_1.yview)

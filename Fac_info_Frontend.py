@@ -57,11 +57,9 @@ class Std_info():
 
                      def Add():
                             if(len(self.name.get()) != 0):
-                               Fac_info_Backend.insert(self.name.get(), self.email.get(), self.address.get(), self.mobno.get(), self.edu.get(), self.dob.get(), \
-                                                       self.gender.get())
+                               Fac_info_Backend.insert(self.name.get(), self.email.get(), self.address.get(), self.mobno.get(), self.edu.get(), self.dob.get(), self.gender.get())
                                self.listbox.delete(0, END)
-                               self.listbox.insert(END, (self.name.get(), self.email.get(), self.address.get(), self.mobno.get(), self.edu.get(), self.dob.get(), \
-                                                       self.gender.get()))
+                               self.listbox.insert(END, (self.name.get(), self.email.get(), self.address.get(), self.mobno.get(), self.edu.get(), self.dob.get(), self.gender.get()))
 
                      def Display():
                                self.listbox.delete(0, END)

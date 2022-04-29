@@ -5,7 +5,7 @@ def connect():
        cur = conn.cursor()
 
        cur.execute("CREATE TABLE IF NOT EXISTS faculty (id INTEGER PRIMARY KEY, name VARCHAR, email VARCHAR, \
-                     address VARCHAR, mobno VARCHAR,edu VARCHAR, dob VARCHAR, gender VARCHAR)")
+                     address VARCHAR, mobno VARCHAR(50),edu VARCHAR, dob VARCHAR, gender VARCHAR)")
 
        conn.commit()
        conn.close()
@@ -14,7 +14,7 @@ def insert(id = " ", name = " ",email = " ", address = " ", mobno = " ", edu = "
        conn = sqlite3.connect("faculty.db")
        cur = conn.cursor()
 
-       cur.execute("INSERT INTO faculty VALUES (NULL,?,?,?,?,?,?,?,?)", (id, name, email, address , mobno, edu, dob, gender))
+       cur.execute("INSERT INTO faculty VALUES (NULL,?,?,?,?,?,?,?)", (name, email, address , mobno, edu, dob, gender))
 
        conn.commit()
        conn.close()
@@ -38,7 +38,7 @@ def delete(id):
        conn.commit()
        conn.close()
 
-def update(id= " ",name = " ", email = " ", address = " ", mobno = " ", edu = " ", dob = " ", gender = " "):
+def update(id= " ", name = " ", email = " ", address = " ", mobno = " ", edu = " ", dob = " ", gender = " "):
        conn = sqlite3.connect("faculty.db")
        cur = conn.cursor()
 

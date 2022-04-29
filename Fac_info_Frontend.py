@@ -1,7 +1,7 @@
 from tkinter import*
 import tkinter.messagebox  
 import random
-import Std_info_BackEnd
+import Fac_info_Backend
 from tkinter import ttk
 
 class Std_info():
@@ -57,15 +57,15 @@ class Std_info():
 
                      def Add():
                             if(len(self.name.get()) != 0):
-                               Fac_info_Backend.insert(self.name.get(), self.email.get(), self.address.get(), self.mobno.get(),  self.dob.get(), \
+                               Fac_info_Backend.insert(self.name.get(), self.email.get(), self.address.get(), self.mobno.get(), self.edu.get(), self.dob.get(), \
                                                        self.gender.get())
                                self.listbox.delete(0, END)
-                               self.listbox.insert(END, (self.name.get(), self.email.get(), self.address.get(), self.mobno.get(), self.dob.get(), \
+                               self.listbox.insert(END, (self.name.get(), self.email.get(), self.address.get(), self.mobno.get(), self.edu.get(), self.dob.get(), \
                                                        self.gender.get()))
 
                      def Display():
                                self.listbox.delete(0, END)
-                               for row in Std_info_BackEnd.view():
+                               for row in Fac_info_Backend.view():
                                       self.listbox.insert(END, row, str(' '))
 
 
@@ -78,11 +78,10 @@ class Std_info():
 
                      def Reset():
                             self.name.set('')
-                            self.fname.set('')
-                            self.mname.set('')
+                            self.email.set('')
                             self.address.set('')
                             self.mobno.set('')
-                            self.email.set('')
+                            self.edu.set('')
                             self.dob.set('')
                             self.gender.set('')
                             self.listbox.delete(0, END)
@@ -91,26 +90,26 @@ class Std_info():
 
                      def Delete():
                             if(len(self.name.get()) != 0):
-                               Std_info_BackEnd.delete(selected_tuple[0])
+                               Fac_info_Backend.delete(selected_tuple[0])
                                Reset()
                                Display()
 
 
                      def Search():
                             self.listbox.delete(0, END)
-                            for row in Std_info_BackEnd.search(self.name.get(), self.fname.get(), self.mname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(),self.gender.get()):
+                            for row in Fac_info_Backend.search(self.name.get(), self.email.get(), self.address.get(), self.mobno.get(), self.edu.get(), self.dob.get(),self.gender.get()):
                                    self.listbox.insert(END, row, str(' '))
                                    
 
                      def Update():
                             if(len(self.name.get()) != 0):
-                               Std_info_BackEnd.delete(selected_tuple[0])
+                               Fac_info_Backend.delete(selected_tuple[0])
                             if(len(self.name.get()) != 0):
-                               Std_info_BackEnd.insert(self.name.get(), self.fname.get(), self.mname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), \
+                               Fac_info_Backend.insert(self.name.get(), self.email.get(), self.address.get(), self.mobno.get(), self.edu.get(), self.dob.get(), \
                                                        self.gender.get())
 
                                self.listbox.delete(0, END)
-                               self.listbox.insert(END, (self.name.get(), self.fname.get(), self.mname.get(), self.address.get(), self.mobno.get(), self.email.get(), self.dob.get(), \
+                               self.listbox.insert(END, (self.name.get(), self.email.get(), self.address.get(), self.mobno.get(), self.edu.get(), self.dob.get(), \
                                                        self.gender.get()))
                      
 
@@ -167,7 +166,7 @@ class Std_info():
                      self.Entry_address.grid(row = 2, column = 1, padx = 10, pady = 5)
                      self.Entry_mobno = Entry(self.Frame_1, font = ('arial',17,'bold'), textvariable = self.mobno)
                      self.Entry_mobno.grid(row = 3, column = 1, padx = 10, pady = 5)
-                     self.Entry_edu = Entry(self.Frame_1, font = ('arial',17,'bold'), textvariable = self.mobno)
+                     self.Entry_edu = Entry(self.Frame_1, font = ('arial',17,'bold'), textvariable = self.edu)
                      self.Entry_edu.grid(row = 4, column = 1, padx = 10, pady = 5)
                      self.Entry_dob = Entry(self.Frame_1, font = ('arial',17,'bold'), textvariable = self.dob)
                      self.Entry_dob.grid(row = 5, column = 1, padx = 10, pady = 5)

@@ -4,7 +4,7 @@ import random
 import Fac_info_Backend
 from tkinter import ttk
 
-class Std_info():
+class Fac_info():
        def __init__(self, master):
               self.master = master
               self.master.title('Faculty Information')
@@ -206,5 +206,5 @@ class Std_info():
                      
 
 root = Tk()
-obj = Std_info(root)
+obj = Fac_info(root)
 root.mainloop()

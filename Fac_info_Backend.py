@@ -4,7 +4,7 @@ def connect():
        conn = sqlite3.connect("faculty.db")
        cur = conn.cursor()
 
-       cur.execute("CREATE TABLE IF NOT EXISTS student (id INTEGER PRIMARY KEY, name VARCHAR, email VARCHAR, \
+       cur.execute("CREATE TABLE IF NOT EXISTS faculty (id INTEGER PRIMARY KEY, name VARCHAR, email VARCHAR, \
                      address VARCHAR, mobno VARCHAR,edu VARCHAR, dob VARCHAR, gender VARCHAR)")
 
        conn.commit()
@@ -14,7 +14,7 @@ def insert(id = " ", name = " ",email = " ", address = " ", mobno = " ", edu = "
        conn = sqlite3.connect("faculty.db")
        cur = conn.cursor()
 
-       cur.execute("INSERT INTO student VALUES (NULL,?,?,?,?,?,?,?,?)", (id, name, email, address , mobno, edu, dob, gender))
+       cur.execute("INSERT INTO faculty VALUES (NULL,?,?,?,?,?,?,?,?)", (id, name, email, address , mobno, edu, dob, gender))
 
        conn.commit()
        conn.close()
@@ -27,7 +27,6 @@ def view():
        cur.execute("SELECT * FROM faculty")
        rows = cur.fetchall()
        return rows
-
        conn.close()
 
 def delete(id):

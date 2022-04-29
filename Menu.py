@@ -29,7 +29,7 @@ def menu():
        root.geometry('1350x750')
        root.config(bg = '#D8E3E7')
        
-       title_Frame = LabelFrame(root, font = ('arial',50,'bold'), width = 1000, height = 100, bg = '#191970', relief = 'raise', bd = 13)
+       title_Frame = LabelFrame(root, font = ('arial',50,'bold'), width = 1500, height = 500, bg = '#191970', relief = 'raise', bd = 13)
        title_Frame.grid(row = 0, column = 0, pady = 50)
        
        title_Label = Label(title_Frame, text = 'MENU', font = ('arial',30,'bold'), bg = '#191970', fg='white')
@@ -45,7 +45,9 @@ def menu():
        Frame_3.grid(row = 3, column = 0, pady = 7)
        Frame_4 = LabelFrame(root, font = ('arial',17,'bold'), width = 1000, height = 100,bg='#D8E3E7', fg='black', relief='flat')
        Frame_4.grid(row = 4, column = 0, pady = 7)
-       
+      
+       #Frame_5 = LabelFrame(root, font = ('arial',17,'bold'), width = 1000, height = 100,bg='#D8E3E7', fg='black', relief='flat')
+       #Frame_5.grid(row = 5, column = 0, pady = 7)
 
 
        #========================================================LABELS===================================================================
@@ -57,19 +59,22 @@ def menu():
        Label_3.grid(row = 0, column = 0, padx = 60, pady = 5)
        Label_4 = Label(Frame_4, text = 'MARKSHEET', font = ('arial',25,'bold'), bg='#D8E3E7', fg='#191970')
        Label_4.grid(row = 0, column = 0, padx = 101, pady = 5)
-       
+      
+       #Label_5 = Label(Frame_4, text = 'FACULTY PROFILE', font = ('arial',25,'bold'), bg='#D8E3E7', fg='#191970')
+       #Label_5.grid(row = 0, column = 0, padx = 50, pady = 5)
 
 
        #========================================================BUTTONS===================================================================
        Button_1 = Button(Frame_1, text = 'VIEW', font = ('arial',16,'bold'), width = 8, bg = '#191970', fg='white', command = __information__)
-       Button_1.grid(row = 0, column = 3, padx = 50)
+       Button_1.grid(row = 0, column = 4, padx = 50)
        Button_2 = Button(Frame_2, text = 'VIEW', font = ('arial',16,'bold'), width = 8, bg = '#191970', fg='white', command = __FeeReport__)
-       Button_2.grid(row = 0, column = 3, padx = 50)
+       Button_2.grid(row = 0, column = 4, padx = 50)
        Button_3 = Button(Frame_3, text = 'VIEW', font = ('arial',16,'bold'), width = 8, bg = '#191970', fg='white', command = __Library__)
-       Button_3.grid(row = 0, column = 3, padx = 50)
+       Button_3.grid(row = 0, column = 4, padx = 50)
        Button_4 = Button(Frame_4, text = 'VIEW', font = ('arial',16,'bold'), width = 8, bg = '#191970', fg='white', command = __marksheet__)
-       Button_4.grid(row = 0, column = 3, padx = 50)
-       
+       Button_4.grid(row = 0, column = 4, padx = 50)
+       #Button_5 = Button(Frame_4, text = 'VIEW', font = ('arial',16,'bold'), width = 8, bg = '#191970', fg='white', command = __marksheet__)
+       #Button_5.grid(row = 0, column = 4, padx = 50)
        
 
        root.mainloop()

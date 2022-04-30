@@ -4,7 +4,7 @@ def connect():
        conn = sqlite3.connect("faculty.db")
        cur = conn.cursor()
 
-       cur.execute("CREATE TABLE IF NOT EXISTS faculty (id INTEGER PRIMARY KEY, name VARCHAR, email VARCHAR, address VARCHAR, mobno VARCHAR(50),edu VARCHAR, dob VARCHAR, gender VARCHAR)")
+       cur.execute("CREATE TABLE IF NOT EXISTS faculty (id INTEGER PRIMARY KEY, name text, email text, address text, mobno integer,edu text, dob integer, gender text)")
 
        conn.commit()
        conn.close()
